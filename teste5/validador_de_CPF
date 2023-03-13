@@ -1,0 +1,25 @@
+cadastrado = [255.265-52, 252.852-55, 258.269-25]
+cpf = 258.269-25
+v = "Validador"
+n = "nao estar cadastrado"
+s = "voce estar cadastrado"
+letras = 'Digite apenas números'
+
+user_input = max(8)
+
+while True:
+    user_input = input ("Digite seu cpf aqui: ") 
+    if user_input.isdigit():
+        break
+    print(f"Entrada inválida. {letras}."  )
+
+
+if cpf in cadastrado:
+    v = cpf == cadastrado
+    print(f"{s}")
+else:
+    print(f"{n}")
+ 
+
+
+
