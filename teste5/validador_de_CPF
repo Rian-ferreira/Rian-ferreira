@@ -1,15 +1,13 @@
-qtd_linhas = 5
-qtd_colunas = 5
+calcular = input("digite seu numero ")
+calcular2 = input("digite outro numero ")
 
-linha = 1
+calcular = int(calcular)
+calcular2 = int(calcular2)
 
+calculadora = True
 
-while linha <= qtd_colunas:
-    coluna =1
-    while coluna <= qtd_colunas:
-        print(f'{linha=} {coluna=}')
-        coluna += 1
-    linha += 1
- 
-
-print("acabou")
+while calculadora:
+    calcular *= calcular2
+    print(calcular)
+    print(f"sua multiplicação dos numeros é  {calcular} ")
+    break
