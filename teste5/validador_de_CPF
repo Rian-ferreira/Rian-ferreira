@@ -1,25 +1,16 @@
-cadastrado = [255.265-52, 252.852-55, 258.269-25]
-cpf = 258.269-25
-v = "Validador"
-n = "nao estar cadastrado"
-s = "voce estar cadastrado"
-letras = 'Digite apenas números'
+contador = 0
+
+while contador <= 100:
+    contador += 1
+
+    if contador == 6:
+        print("nao vou mostrar o 6")
+        continue
+
+    print(contador)
 
 
+    if contador == 100:
+     break
 
-while True:
-    user_input = input ("Digite seu cpf aqui: ") 
-    if user_input.isdigit():
-        break
-    print(f"Entrada inválida. {letras}."  )
-
-
-if cpf in cadastrado:
-    v = cpf == cadastrado
-    print(f"{s}")
-else:
-    print(f"{n}")
- 
-
-
-
+print("acabou")
